@@ -13,3 +13,13 @@ p {font-family:Georgia, serif;font-size:14px;font-style:normal;font-weight:norma
 </style>
 </head>
 <body>
+{{/* Ini adalah komentar */}}
+<h1>Name: {{.Name}}</h1>
+{{with .Address}}
+<h1>Address Street: {{.Street}}</h1>
+<h1>Address City: {{.City}}</h1>
+{{else}}
+<h1>Anda tidak mempunyai alamat?</h1>
+{{end}}
+</body>
+</html>
